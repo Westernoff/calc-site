@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт с калькуляторами</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Калькуляторы онлайн</h1>
+    <nav>
+      <a href="#percent">Проценты</a>
+      <a href="#credit">Кредит</a>
+      <a href="#bmi">BMI</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Калькулятор процентов -->
+    <section id="percent" class="calculator">
+      <h2>Калькулятор процентов</h2>
+      <div class="calc-box">
+        <input type="number" id="base-number" placeholder="Введите число">
+        <input type="number" id="percent-value" placeholder="Введите процент">
+        <button onclick="calcPercent()">Рассчитать</button>
+        <p id="percent-result"></p>
+      </div>
+    </section>
+
+    <!-- Кредитный калькулятор -->
+    <section id="credit" class="calculator">
+      <h2>Кредитный калькулятор</h2>
+      <div class="calc-box">
+        <input type="number" id="loan-amount" placeholder="Сумма кредита">
+        <input type="number" id="loan-term" placeholder="Срок (мес)">
+        <input type="number" id="loan-rate" placeholder="Процент годовой">
+        <button onclick="calcCredit()">Рассчитать</button>
+        <p id="credit-result"></p>
+      </div>
+    </section>
+
+    <!-- BMI калькулятор -->
+    <section id="bmi" class="calculator">
+      <h2>BMI калькулятор</h2>
+      <div class="calc-box">
+        <input type="number" id="weight" placeholder="Вес (кг)">
+        <input type="number" id="height" placeholder="Рост (см)">
+        <button onclick="calcBMI()">Рассчитать</button>
+        <p id="bmi-result"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Калькуляторы онлайн</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
